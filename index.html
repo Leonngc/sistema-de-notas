@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sistemas de Notas</h1>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>Preencha os campos</legend>
+            <form method="post" action="main.js" id="formu" >
+
+                <input type="text" minlength="3" maxlength="40" placeholder="Nome do aluno" id="nome" class="dados"required>
+                <input type="text" name="turma" id="turma" placeholder="Turma" class="dados" minlength="1" maxlength="10" required>
+                <br>
+                <legend>Matéria:</legend>
+                <br>
+                <label>Português</label> <input type="radio" id="portugues" class="materias" name="materia" checked>
+                <label>Matemática</label> <input type="radio" name="materia" id="matematica" class="materias">
+                <label>História</label> <input type="radio" name="materia" id="historia" class="materias">
+                <label>Geografia</label> <input type="radio" name="materia" id="historia" class="materias">
+                <br> <br>
+                <legend>Notas:</legend>
+
+                <input type="number" id="nota1" class="dados" placeholder="Nota 1" min="0" max="10" required>
+                <br>
+                <input type="number" id="nota2" class="dados" placeholder="Nota 2" min="0" max="10" required>
+                <br>
+                <input type="number" min="0" max="10" class="dados" id="nota3" placeholder="Nota 3" required>
+                <br>
+                <input type="number" id="nota4" class="dados" placeholder="Nota 4" min="0" max="10" required>
+                <br>
+                <button type="submit" class="botao" id="botao" onsubmit="checkInputs()">Confirmar</button>
+            </form>
+            <picture>
+                <img src="" alt="">
+            </picture>
+        </fieldset>
+        <article>
+            <div>
+                <h1>Este site</h1>
+                <p>Este site tem foco na utilização do Javascript, onde usa-se o cálculo das notas e a interatividade
+                    das
+                    imagens.
+                    <br>
+                    O usuário deve inserir as 4 notas. Após isso será feito os cálculos de média. Levamos em
+                    consideração as
+                    notas abaixo de 7,0 como de reprovação, as acimas de 7,0 são de aprovação. <br>
+                    Dependendo da média do aluno será emitida uma mensagem sobre seu desempenho. Se o usuário tiver a
+                    média
+                    entre 9,0 e 10,0 por exemplo, diremos que ele é um aluno de excelência e exemplar.
+                </p>
+            </div>
+        </article>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>
