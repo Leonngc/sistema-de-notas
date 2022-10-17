@@ -17,10 +17,12 @@
     <main>
         <fieldset>
             <legend>Preencha os campos</legend>
-            <form method="post" action="main.js" id="formu" >
+            <form id="formu">
 
                 <input type="text" minlength="3" maxlength="40" placeholder="Nome do aluno" id="nome" class="dados"required>
+
                 <input type="text" name="turma" id="turma" placeholder="Turma" class="dados" minlength="1" maxlength="10" required>
+
                 <br>
                 <legend>Matéria:</legend>
                 <br>
@@ -39,11 +41,15 @@
                 <br>
                 <input type="number" id="nota4" class="dados" placeholder="Nota 4" min="0" max="10" required>
                 <br>
-                <button type="submit" class="botao" id="botao" onsubmit="checkInputs()">Confirmar</button>
+               <button type="submit" class="botao" id="botao">Confirmar</button>
             </form>
-            <picture>
-                <img src="" alt="">
-            </picture>
+             
+            <div id="res">
+                
+                <picture>
+                    <img src="" alt="">
+                </picture>
+            </div>
         </fieldset>
         <article>
             <div>
