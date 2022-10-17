@@ -17,10 +17,16 @@ fieldset{
     max-width: 450px;
     min-width: 220px;
     margin:auto;
+    margin-top: 25px;
     font-size: 18px;
     text-align: center;
 }
 
+.titleForm{
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
 .dados{
     width: 300px;
     height: 22px;
@@ -36,6 +42,25 @@ fieldset{
     border-style: none;
     border-radius: 3px;
 }
+
+.buttonReset{
+text-align: center;
+background-color: rgb(179, 24, 60);
+color: white;
+height: 30px;
+width: 119px;
+border-style: none;
+border-radius: 3px;
+margin: 22px;
+}
+
+.buttonReset:hover{
+    background-color: white;
+    color: rgb(179, 24, 60);
+    border-style: groove;
+    border-color: rgb(179, 24, 60);
+}
+
 .botao:hover{
     background-color: white;
     color:rgb(60, 166, 166) ;
@@ -43,7 +68,7 @@ fieldset{
     border-color: rgb(60, 166, 166);
 }
 
-div{
+.text{
     text-align: center;
 }
 div > h1{
@@ -61,4 +86,11 @@ div > p{
     padding: 6px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+#res{
+    display: grid;
+    margin: auto;
+    align-self: center;
+    justify-items: center;
 }
