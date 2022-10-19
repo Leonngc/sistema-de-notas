@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(243, 239, 245);
+}
 
 header {
     text-align: center;
@@ -14,12 +17,14 @@ header {
 }
 
 fieldset{
-    max-width: 450px;
-    min-width: 220px;
+    max-width: 580px;
+    min-width: 200px;
     margin:auto;
     margin-top: 25px;
     font-size: 18px;
     text-align: center;
+    border-radius: 18px;
+    
 }
 
 .titleForm{
@@ -27,12 +32,22 @@ fieldset{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
+label{
+    font-family: monospace;
+    padding: 5px;
+    
+}
 .dados{
     width: 300px;
     height: 22px;
     margin: 5px;
     font-size: 15px;
+    border-radius: 8px;
+    padding: 5px;
+    border-style: double;
+    border-color: rgb(120, 205, 119);
 }
+
 .botao{
     text-align: center;
     background-color: rgb(60, 166, 166);
@@ -41,6 +56,7 @@ fieldset{
     width: 119px;
     border-style: none;
     border-radius: 3px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.392);
 }
 
 .buttonReset{
@@ -52,6 +68,7 @@ width: 119px;
 border-style: none;
 border-radius: 3px;
 margin: 22px;
+box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.392);
 }
 
 .buttonReset:hover{
@@ -71,6 +88,14 @@ margin: 22px;
 .text{
     text-align: center;
 }
+.text > p{
+    border-style: ridge; 
+    border-color: rgba(0, 0, 0, 0.626);
+     border-radius: 5px;
+    border-top: none;
+    padding-left: 60px;
+    padding-right: 60px;
+}
 div > h1{
     background-color: black;
     color:white;
@@ -83,7 +108,6 @@ div > p{
     min-width: 200px;
     margin: auto;
     text-align: justify;
-    padding: 6px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
