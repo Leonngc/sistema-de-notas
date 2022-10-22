@@ -5,6 +5,7 @@
     margin: auto;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -25,6 +26,7 @@ fieldset {
     min-width: 200px;
     margin: auto;
     margin-top: 25px;
+    padding: 10px;
     font-size: 18px;
     text-align: center;
     border-radius: 18px;
