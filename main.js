@@ -93,12 +93,12 @@ function validationNotes() {
         if (mediaDasNotas < 7 && mediaDasNotas > 0) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é menor que 7. <br> Você está reprovado em História.`
 
-            img.setAttribute('src', 'reprovado_pequeno.png')
+            img.setAttribute('src', 'img/reprovado_pequeno.png')
 
         } else if (mediaDasNotas == 0) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é menor que 7. <br> Você foi reprovado em História com 0% de aproveitamento. <br> Favor, se esforçar mais no próximo ano.`
 
-            img.setAttribute('src', 'reprovado_pequeno.png')
+            img.setAttribute('src', 'img/reprovado_pequeno.png')
 
         } else if (mediaDasNotas > 7 && mediaDasNotas < 10) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é maior que 7. <br> Você está aprovado em História. <br> Parabéns.`
