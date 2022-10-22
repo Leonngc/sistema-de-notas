@@ -32,6 +32,8 @@ function validationNotes() {
     var img = document.createElement('img')
     img.setAttribute('id', 'img')
 
+
+    //PORTUGUÊS
     if (mattersRad[0].checked) {
         if (mediaDasNotas < 7 && mediaDasNotas > 0) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é menor que 7. <br> Você está reprovado em português.`
@@ -49,11 +51,19 @@ function validationNotes() {
             img.setAttribute('src', 'img/aprovado_pequeno.png')
 
         } else if (mediaDasNotas == 10) {
+            res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é maior que 7. <br> Você foi aprovado em Português com 100% de aproveitamento. <br> Meus sinceros parabéns.`
+
+            img.setAttribute('src', 'img/aprovado_pequeno.png')
+        }
+        else if (mediaDasNotas == 10) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é maior que 7. <br> Você foi aprovado em português com 100% de aproveitamento. <br> Meus sinceros parabéns.`
 
             img.setAttribute('src', 'img/aprovado_pequeno.png')
         }
     }
+
+
+    //MATEMÁTICA
     if (mattersRad[1].checked) {
         if (mediaDasNotas < 7 && mediaDasNotas > 0) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é menor que 7. <br> Você foi reprovado em Matemática.`
@@ -75,51 +85,57 @@ function validationNotes() {
             img.setAttribute('src', 'img/aprovado_pequeno.png')
 
         }
-    } 
-    if(mattersRad[2].checked){
-        if(mediaDasNotas < 7 && mediaDasNotas > 0){
+    }
+
+
+    //HISTÓRIA
+    if (mattersRad[2].checked) {
+        if (mediaDasNotas < 7 && mediaDasNotas > 0) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é menor que 7. <br> Você está reprovado em História.`
 
             img.setAttribute('src', 'reprovado_pequeno.png')
-            
-        }else if(mediaDasNotas == 0){
+
+        } else if (mediaDasNotas == 0) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é menor que 7. <br> Você foi reprovado em História com 0% de aproveitamento. <br> Favor, se esforçar mais no próximo ano.`
 
             img.setAttribute('src', 'reprovado_pequeno.png')
 
-        }else if(mediaDasNotas > 7 && mediaDasNotas < 10){
+        } else if (mediaDasNotas > 7 && mediaDasNotas < 10) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é maior que 7. <br> Você está aprovado em História. <br> Parabéns.`
 
             img.setAttribute('src', 'img/aprovado_pequeno.png')
 
-        }else if(mediaDasNotas == 10){
+        } else if (mediaDasNotas == 10) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é maior que 7. <br> Você foi aprovado em História com 100% de aproveitamento. <br> Meus sinceros parabéns.`
 
             img.setAttribute('src', 'img/aprovado_pequeno.png')
 
         }
-    }if(radMatters[3]){
-        if(mediaDasNotas < 7 && mediaDasNotas > 0){
-            res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é menor que 7. <br> Você está reprovado em Geografia.` 
+
+
+        //GEOGRAFIA
+    } if (radMatters[3].checked) {
+        if (mediaDasNotas < 7 && mediaDasNotas > 0) {
+            res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é menor que 7. <br> Você está reprovado em Geografia.`
 
             img.setAttribute('src', 'img/reprovado_pequeno.png')
 
-        }else if(mediaDasNotas == 0){
+        } else if (mediaDasNotas == 0) {
             res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é menor que 7. <br> Você foi reprovado com 0% de aproveitamento em Geografia. <br> Favor, se esforçar mais no próximo ano.`
 
             img.setAttribute('src', 'img/reprovado_pequeno.png')
 
-        }else if(mediaDasNotas > 7 && mediaDasNotas < 10){
-            res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é maior que 7. <br> Você está aprovado em Geografia. <br> Parabéns` 
+        } else if (mediaDasNotas > 7 && mediaDasNotas < 10) {
+            res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é maior que 7. <br> Você está aprovado em Geografia. <br> Parabéns`
 
             img.setAttribute('src', 'img/aprovado_pequeno.png')
 
-        } else if(mediaDasNotas == 10){
-            res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é maior que 7. <br> Você foi aprovado em Geografia com 100% de aproveitamento. <br> Meus sinceros parabéns` 
+        } else if (mediaDasNotas == 10) {
+            res.innerHTML = `Olá ${name}! Sua média ${mediaDasNotas} é maior que 7. <br> Você foi aprovado em Geografia com 100% de aproveitamento. <br> Meus sinceros parabéns`
 
             img.setAttribute('src', 'img/aprovado_pequeno.png')
 
-            
+
         }
 
     }

@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 * {
     margin: auto;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: rgb(243, 239, 245);
 }
 
@@ -12,43 +16,53 @@ header {
     background-image: linear-gradient(90deg, rgba(58, 180, 123, 1) 0%, rgba(80, 172, 16, 1) 40%, rgba(69, 248, 252, 1) 100%);
     padding: 20px;
     color: white;
-    font-family: monospace;
+    font-family: 'Share Tech Mono', monospace;
     font-size: 20px;
 }
 
-fieldset{
+fieldset {
     max-width: 580px;
     min-width: 200px;
-    margin:auto;
+    margin: auto;
     margin-top: 25px;
     font-size: 18px;
     text-align: center;
     border-radius: 18px;
-    
+
 }
 
-.titleForm{
+.titleForm {
     font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-family: 'Teko', sans-serif;
+
 }
-label{
-    font-family: monospace;
+
+label {
+    font-family: 'Share Tech Mono', monospace;
     padding: 5px;
-    
+
 }
-.dados{
+
+.materias{
+    border-color: rgba(80, 172, 16, 1);
+    border: 1px solid;
+    width: 23px;
+    height: 20px;
+}
+
+.dados {
     width: 300px;
     height: 22px;
     margin: 5px;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: 'Teko', sans-serif;
     border-radius: 8px;
     padding: 5px;
     border-style: double;
     border-color: rgb(120, 205, 119);
 }
 
-.botao{
+.botao {
     text-align: center;
     background-color: rgb(60, 166, 166);
     color: white;
@@ -57,64 +71,89 @@ label{
     border-style: none;
     border-radius: 3px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.392);
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
 }
 
-.buttonReset{
-text-align: center;
-background-color: rgb(179, 24, 60);
-color: white;
-height: 30px;
-width: 119px;
-border-style: none;
-border-radius: 3px;
-margin: 22px;
-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.392);
+.buttonReset {
+    text-align: center;
+    background-color: rgb(179, 24, 60);
+    color: white;
+    height: 30px;
+    width: 119px;
+    border-style: none;
+    border-radius: 3px;
+    margin: 22px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.392);
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
 }
 
-.buttonReset:hover{
+.buttonReset:hover {
     background-color: white;
     color: rgb(179, 24, 60);
     border-style: groove;
     border-color: rgb(179, 24, 60);
 }
 
-.botao:hover{
+.botao:hover {
     background-color: white;
-    color:rgb(60, 166, 166) ;
+    color: rgb(60, 166, 166);
     border-style: groove;
     border-color: rgb(60, 166, 166);
 }
 
-.text{
-    text-align: center;
-}
-.text > p{
-    border-style: ridge; 
-    border-color: rgba(0, 0, 0, 0.626);
-     border-radius: 5px;
-    border-top: none;
-    padding-left: 60px;
-    padding-right: 60px;
-}
-div > h1{
+
+div>h1 {
     background-color: black;
-    color:white;
+    color: white;
     text-align: center;
     margin-top: 110px;
     height: 50px;
+    font-size: 30px;
+    font-family: monospace;
 }
-div > p{
+
+
+
+.text {
+    text-align: center;
+}
+
+.text>p {
+    border-style: ridge;
+    border-color: rgba(0, 0, 0, 0.626);
+    border-radius: 5px;
+    border-top: none;
+    padding: 15px 60px 20px 60px;
     max-width: 500px;
     min-width: 200px;
     margin: auto;
     text-align: justify;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; 
+    font-family: 'Teko', sans-serif;
 }
 
-#res{
+#res {
     display: grid;
     margin: auto;
     align-self: center;
     justify-items: center;
+}
+
+footer{
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    padding-bottom: 12px;
+}
+
+a#insta{
+    
+    color: rgb(240, 56, 107);
+}
+
+a#github{
+    color: rgb(41, 49, 50);
 }

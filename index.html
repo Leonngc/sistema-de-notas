@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Document</title>
+    <title>Sistema de Notas</title>
 </head>
 
 <body>
@@ -19,9 +19,11 @@
             <legend class="titleForm">Preencha os campos</legend>
             <form id="formu">
 
-                <input type="text" minlength="3" maxlength="40" placeholder="Nome do aluno" id="nome" class="dados"required>
+                <input type="text" minlength="3" maxlength="40" placeholder="Nome do aluno" id="nome" class="dados"
+                    required>
 
-                <input type="text" name="turma" id="turma" placeholder="Turma" class="dados" minlength="1" maxlength="10" required>
+                <input type="text" name="turma" id="turma" placeholder="Turma" class="dados" minlength="1"
+                    maxlength="10" required>
 
                 <br>
                 <legend>Matéria:</legend>
@@ -29,7 +31,7 @@
                 <label>Português</label> <input type="radio" id="portugues" class="materias" name="materia" checked>
                 <label>Matemática</label> <input type="radio" name="materia" id="matematica" class="materias">
                 <label>História</label> <input type="radio" name="materia" id="historia" class="materias">
-                <label>Geografia</label> <input type="radio" name="materia" id="historia" class="materias">
+                <label>Geografia</label> <input type="radio" name="materia" id="geografia" class="materias">
                 <br> <br>
                 <legend>Notas:</legend>
 
@@ -41,12 +43,12 @@
                 <br>
                 <input type="number" id="nota4" class="dados" placeholder="Nota 4" min="0" max="10" required>
                 <br>
-               <button type="submit" class="botao" id="botao">Confirmar</button> 
-               <button type="reset" class="buttonReset">Resetar</button>
+                <button type="submit" class="botao" id="botao">Confirmar</button>
+                <button type="reset" class="buttonReset">Resetar</button>
             </form>
-             <br>
+            <br>
             <div id="res">
-                
+
                 <picture class="picture">
                     <img src="" alt="" class="image">
                 </picture>
@@ -69,7 +71,13 @@
             </div>
         </article>
     </main>
-    
+    <footer>Acesse meu perfil no 
+        <a href="https://www.instagram.com/invites/contact/?i=v51r9yywgago&utm_content=76c5ljq"
+            id="insta" class="redeSocial" target="_blank">Instagram</a> e 
+            <a href="https://github.com/Leonngc"
+            target="_blank" id="github" class="redeSocial">Github
+        </a>
+    </footer>
 </body>
 <script src="main.js"></script>
 
